@@ -27,12 +27,12 @@ In this lab, we are going to write a Python program which can generate a network
 6. If Mininet functions correctly, using the exit command `exit` in CLI to exit
 7. Clean up all the connections: `sudo mn -c` 
 8. Change to the directory: `cd ./Network_Topology/src/`
-9. Run the example code:
-   Change to the executable mode of topology.py
-   `sudo chmod +x topology.py`
-   Run topology.py
-   `sudo ./topology.py`
-   
+9. Run the example code:   
+   Change to the executable mode of topology.py   
+   `sudo chmod +x topology.py`   
+   Run topology.py   
+   `sudo ./topology.py`   
+
    
 
 ---
