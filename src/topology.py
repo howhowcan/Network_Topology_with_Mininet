@@ -63,8 +63,11 @@ def TestTopo0():
         link = TCLink)
     # Start a network
     net.start()
-
+    # Go into CLI mode
     CLI(net)
+	# Dump every hosts' and switches' connections
+    dumpNodeConnections(net.hosts)
+    dumpNodeConnections(net.switches)
 
 '''
 Main (entry point)
