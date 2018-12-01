@@ -19,7 +19,11 @@ In this lab, we are going to write a Python program which can generate a network
 > TODO: 
 > * Describe how to execute your program
 > * Show the screenshot of using iPerf command in Mininet
-
+1. Push topology.py to the repo
+2. Connect to the container by Pietty, and login as root
+3. Clone my repo by the command `git clone https://github.com/nctucn/lab2-howhowcan.git Network_Topology`
+4. Start the service of Open vSwitch by the command `sudo service openvswitch-switch start`
+5. Check the functionality of Mininet
 ---
 ## Description
 
