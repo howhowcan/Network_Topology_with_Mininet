@@ -28,10 +28,10 @@ In this lab, we are going to write a Python program which can generate a network
 7. Clean up all the connections: `sudo mn -c` 
 8. Change to the directory: `cd ./Network_Topology/src/`
 9. Run the example code:   
-   Change to the executable mode of topology.py   
-   * `sudo chmod +x topology.py`   
-   Run topology.py   
-   * `sudo ./topology.py`    
+   * Change to the executable mode of topology.py   
+   `sudo chmod +x topology.py`   
+   * Run topology.py   
+   `sudo ./topology.py`    
 10. If succeed, you will go into CLI mode. Then, execute the following command to get the result:   
    `mininet> h2 iperf -s -u -i 1 > ./out/result &`    
    `mininet> h6 iperf -c 10.0.0.2 -u –i 1`    
