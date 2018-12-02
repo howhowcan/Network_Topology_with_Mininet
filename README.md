@@ -26,7 +26,7 @@ In this lab, we are going to write a Python program which can generate a network
 4. If Mininet functions correctly, using the exit command `exit` in CLI to exit
 5. Clean up all the connections: `sudo mn -c` 
 6. Change to the directory: `cd ./Network_Topology/src/`
-7. Run the example code:   
+7. Run the code:   
    * Change to the executable mode of topology.py   
    `sudo chmod +x topology.py`   
    * Run topology.py   
@@ -86,12 +86,20 @@ In this lab, we are going to write a Python program which can generate a network
     1.7 Run mininet for testing :`sudo mn`    
     1.8 The error mentioned in the slide occurred, so use the command `sudo service openvswitch-switch start`    
         to solve the problem    
-    1.9 Run mininet again and check if miniet is work correctly this time    
+    1.9 Run mininet again and check if miniet is work correctly this time  
+    1.10 Clean up all the connections: `sudo mn -c`     
 2. **Example of Mininet**
-
-
+    2.1 Change to the directory: `cd ./Network_Topology/src/`
+    2.2 Run the example code:   
+        * Change to the executable mode of example.py   
+          `sudo chmod +x example.py`   
+        * Run example.py   
+          `sudo ./example.py`      
+    2.3 Check the result
 3. **Topology Generator**
 
+    > In this task, all the steps are done in my own computer, not in the container
+    3.1 Because (my student ID)%3 equals to 0, 
 
 4. **Measurement**
 
