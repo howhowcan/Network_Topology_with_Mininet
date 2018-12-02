@@ -72,19 +72,20 @@ In this lab, we are going to write a Python program which can generate a network
 > TODO:
 > * Describe how you finish this work step-by-step in detail
 
-1. **Environment Setup**
+1. **Environment Setup**    
     1.1 Click the link in the slide to join the lab on GitHub Classroom    
     1.2 Open Pietty and connect to the container with IP `140.113.195.69` and Port `612213`    
     1.3 Login as `root`, and the password is `cn2018`    
     1.4 Use the command `passwd` to change the password    
     1.5 Clone my repo by `git clone https://github.com/nctucn/lab2-howhowcan.git Network_Topology`    
-    1.6 Initiate the git infos by the command     
+    1.6 Initiate the git infos by the command      
         ```
-        git config --global user.name "howhowcan"
-        git config --global user.email gktt58@gmail.com
+            git config --global user.name "howhowcan"    
+            git config --global user.email gktt58@gmail.com
         ```    
     1.7 Run mininet for testing :`sudo mn`    
-    1.8 The error mentioned in the slide occured, so use the command `sudo service openvswitch-switch start` to solve the problem    
+    1.8 The error mentioned in the slide occured, so use the command `sudo service openvswitch-switch start`    
+        to solve the problem    
     1.9 Run mininet again and check if miniet is work correctly this time    
 2. **Example of Mininet**
 
