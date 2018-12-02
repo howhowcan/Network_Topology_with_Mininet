@@ -80,11 +80,11 @@ In this lab, we are going to write a Python program which can generate a network
     1.5 Clone my repo by `git clone https://github.com/nctucn/lab2-howhowcan.git Network_Topology`    
     1.6 Initiate the git infos by the command      
         ```
-            git config --global user.name "howhowcan"    
-            git config --global user.email gktt58@gmail.com
+            git config --global user.name "howhowcan"      
+            git config --global user.email gktt58@gmail.com    
         ```    
     1.7 Run mininet for testing :`sudo mn`    
-    1.8 The error mentioned in the slide occured, so use the command `sudo service openvswitch-switch start`    
+    1.8 The error mentioned in the slide occurred, so use the command `sudo service openvswitch-switch start`    
         to solve the problem    
     1.9 Run mininet again and check if miniet is work correctly this time    
 2. **Example of Mininet**
