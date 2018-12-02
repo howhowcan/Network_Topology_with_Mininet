@@ -19,6 +19,7 @@ In this lab, we are going to write a Python program which can generate a network
 > TODO: 
 > * Describe how to execute your program
 > * Show the screenshot of using iPerf command in Mininet
+> To execute my program, you must have an linux enviroment with Mininet installed in your machine.
 1. Push topology.py to the repo
 2. Connect to the container by Pietty, and login as root
 3. Clone my repo by `git clone https://github.com/nctucn/lab2-howhowcan.git Network_Topology`
@@ -53,6 +54,20 @@ In this lab, we are going to write a Python program which can generate a network
 
 > TODO:
 > * Describe the meaning of iPerf command you used in detail
+1. `mininet> h2 iperf -s -u -i 1 > ./out/result &`    
+   `h2`: host 2    
+   `iperf`: using iPerf to measure the max achievable bandwidth    
+   `-s`: let h2 play the role of server in iPerf    
+   `-u`: using UDP connections    
+   `-i 1`: set interval to 1s    
+   `> ./out/result &`: make a file ./out/result to save the result of this test     
+2. `mininet> h6 iperf -c 10.0.0.2 -u –i 1`    
+   `h6`: host 6    
+   `iperf`: same as above    
+   `-c`: let h6 play the role of client in iPerf    
+   `10.0.0.2`     
+   `-u`: same as above    
+   `-i 1`: same as above    
 
 ### Tasks
 
@@ -61,7 +76,7 @@ In this lab, we are going to write a Python program which can generate a network
 
 1. **Environment Setup**
 
-
+   
 2. **Example of Mininet**
 
 
