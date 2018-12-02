@@ -18,22 +18,20 @@ In this lab, we are going to write a Python program which can generate a network
 
 > TODO: 
 > * Describe how to execute your program
-> * Show the screenshot of using iPerf command in Mininet
-> To execute my program, you must have an linux enviroment with Mininet installed in your machine.
-1. Push topology.py to the repo
-2. Connect to the container by Pietty, and login as root
-3. Clone my repo by `git clone https://github.com/nctucn/lab2-howhowcan.git Network_Topology`
-4. Start the service of Open vSwitch by `sudo service openvswitch-switch start`
-5. Check the functionality of Mininet: `sudo mn`
-6. If Mininet functions correctly, using the exit command `exit` in CLI to exit
-7. Clean up all the connections: `sudo mn -c` 
-8. Change to the directory: `cd ./Network_Topology/src/`
-9. Run the example code:   
+> * Show the screenshot of using iPerf command in Mininet    
+> * To execute my program, you must have an linux enviroment with Mininet installed in your machine.
+1. Clone my repo by `git clone https://github.com/nctucn/lab2-howhowcan.git Network_Topology`
+2. Start the service of Open vSwitch by `sudo service openvswitch-switch start`
+3. Check the functionality of Mininet: `sudo mn`
+4. If Mininet functions correctly, using the exit command `exit` in CLI to exit
+5. Clean up all the connections: `sudo mn -c` 
+6. Change to the directory: `cd ./Network_Topology/src/`
+7. Run the example code:   
    * Change to the executable mode of topology.py   
    `sudo chmod +x topology.py`   
    * Run topology.py   
    `sudo ./topology.py`    
-10. If succeed, you will go into CLI mode. Then, execute the following command to get the result:   
+8. If succeed, you will go into CLI mode. Then, execute the following command to get the result:   
    `mininet> h2 iperf -s -u -i 1 > ./out/result &`    
    `mininet> h6 iperf -c 10.0.0.2 -u –i 1`    
    
@@ -75,8 +73,19 @@ In this lab, we are going to write a Python program which can generate a network
 > * Describe how you finish this work step-by-step in detail
 
 1. **Environment Setup**
-
-   
+    1.1 Click the link in the slide to join the lab on GitHub Classroom    
+    1.2 Open Pietty and connect to the container with IP `140.113.195.69` and Port `612213`    
+    1.3 Login as `root`, and the password is `cn2018`    
+    1.4 Use the command `passwd` to change the password    
+    1.5 Clone my repo by `git clone https://github.com/nctucn/lab2-howhowcan.git Network_Topology`    
+    1.6 Initiate the git infos by the command     
+        ```
+        git config --global user.name "howhowcan"
+        git config --global user.email gktt58@gmail.com
+        ```    
+    1.7 Run mininet for testing :`sudo mn`    
+    1.8 The error mentioned in the slide occured, so use the command `sudo service openvswitch-switch start` to solve the problem    
+    1.9 Run mininet again and check if miniet is work correctly this time    
 2. **Example of Mininet**
 
 
