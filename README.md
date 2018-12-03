@@ -100,11 +100,30 @@ In this lab, we are going to write a Python program which can generate a network
 
     > In this task, all the steps are done in my own computer, not in the container
 
-    3.1 Because (my student ID)%3 equals to 0, 
+    3.1 Because (my student ID)%3 equals to 0, I check topo0.png     
+    3.2 After refering to example.py and some articles online, I finish my work named topology.py    
+    3.3 Push topology.py to github
 
 4. **Measurement**
+    
+    > Go back to the container and do the following steps
 
----
+    4.1 Change to the root directory by `cd ~/`    
+    4.2 Remove my old directory by the command `rm -r Network_Topology/`    
+    4.3 Clone my new repo by `git clone https://github.com/nctucn/lab2-howhowcan.git Network_Topology`    
+    4.4 Use the command `cd ~/Network_Topology/src/` to go to the directory with topology.py    
+    4.5 Run the topology.py:   
+        * Change to the executable mode of topology.py   
+          `sudo chmod +x topology.py`     
+        * Run topology.py     
+          `sudo ./topology.py`  
+    4.6 The command above will create a web topo system as same as described in topo0.png and go into the CLI mode of Mininet    
+    4.7 execute the following command to get the result:   
+        `mininet> h2 iperf -s -u -i 1 > ./out/result &`    
+        `mininet> h6 iperf -c 10.0.0.2 -u –i 1`    
+    4.8 The result is what we want, so use `mininet> exit` to quit from CLI mode
+    4.9 Use the command bellow to push my work on the github:    
+    
 ## References
 
 > TODO: 
