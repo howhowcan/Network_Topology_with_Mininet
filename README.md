@@ -78,11 +78,13 @@ In this lab, we are going to write a Python program which can generate a network
     1.3 Login as `root`, and the password is `cn2018`    
     1.4 Use the command `passwd` to change the password    
     1.5 Clone my repo by `git clone https://github.com/nctucn/lab2-howhowcan.git Network_Topology`    
-    1.6 Initiate the git infos by the command      
+    1.6 Initiate the git infos by the command  
+
 ```
     git config --global user.name "howhowcan"      
     git config --global user.email gktt58@gmail.com    
-```    
+``` 
+   
     1.7 Run mininet for testing :`sudo mn`    
     1.8 The error mentioned in the slide occurred, so use the command `sudo service openvswitch-switch start`    
         to solve the problem    
