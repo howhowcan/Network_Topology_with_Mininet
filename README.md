@@ -16,10 +16,7 @@ In this lab, we are going to write a Python program which can generate a network
 ---
 ## Execution
 
-> TODO: 
-> * Describe how to execute your program
-> * Show the screenshot of using iPerf command in Mininet    
-> * To execute my program, you must have an linux enviroment with Mininet installed in your machine.
+> To execute my program, you must have an linux enviroment with Mininet installed in your machine.
 1. Clone my repo by `git clone https://github.com/nctucn/lab2-howhowcan.git Network_Topology`
 2. Start the service of Open vSwitch by `sudo service openvswitch-switch start`
 3. Check the functionality of Mininet: `sudo mn`
@@ -34,7 +31,10 @@ In this lab, we are going to write a Python program which can generate a network
 8. If succeed, you will go into CLI mode. Then, execute the following command to get the result:   
    `mininet> h2 iperf -s -u -i 1 > ./out/result &`    
    `mininet> h6 iperf -c 10.0.0.2 -u –i 1`    
-   
+   ![](https://i.imgur.com/jrWeZCQ.jpg)
+   ![](https://i.imgur.com/AmPheCo.jpg)
+
+
 
 
 
@@ -45,13 +45,23 @@ In this lab, we are going to write a Python program which can generate a network
 
 ### Mininet API in Python
 
-> TODO:
-> * Describe the meaning of Mininet API in Python you used in detail
+
+
+* `switch1 = self.addSwitch('s1')`: declare a new variable `switch1` and use the member function `addSwitch('')` to add a switch called `s1` to  the topo
+* `host1 = self.addHost('h1')`: declare a new variable `host1` and use the member function `addHost('')` to add a host called `h1` to  the topo
+* `self.addLink(host1,switch1,bw = 10,delay = '50us',loss = 12)`: call the member function `addLink` to build a link between `host1` and `switch1` ,which has a 10Mbits bandwidth, 50us delay 
+* `net = Mininet(
+        topo = topo, 
+        controller = OVSController,
+        link = TCLink)`: create a net,and set its topology to what we defined above, and use an Open vSwitch controller, and link with symmetric TC interfaces
+* `net.start()`: start to test the net we defined above
+* `CLI(net)`: go into CLI mode of Mininet
+* `dumpNodeConnections(net.hosts)`: after we end the CLI mode, we dump every host's connection
+* `dumpNodeConnections(net.switches)` dump every switch's connection
+* `setLogLevel('info')`: let mininet show some information about the net 
 
 ### iPerf Commands
 
-> TODO:
-> * Describe the meaning of iPerf command you used in detail
 1. `mininet> h2 iperf -s -u -i 1 > ./out/result &`    
    `h2`: host 2    
    `iperf`: using iPerf to measure the max achievable bandwidth    
@@ -69,27 +79,21 @@ In this lab, we are going to write a Python program which can generate a network
 
 ### Tasks
 
-> TODO:
-> * Describe how you finish this work step-by-step in detail
-
 1. **Environment Setup**    
     1.1 Click the link in the slide to join the lab on GitHub Classroom    
     1.2 Open Pietty and connect to the container with IP `140.113.195.69` and Port `612213`    
     1.3 Login as `root`, and the password is `cn2018`    
-    1.4 Use the command `passwd` to change the password    
+    1.4 Use the command `passwd` to change the password to `z25426425`    
     1.5 Clone my repo by `git clone https://github.com/nctucn/lab2-howhowcan.git Network_Topology`    
     1.6 Initiate the git infos by the command  
-
-```
-    git config --global user.name "howhowcan"      
-    git config --global user.email gktt58@gmail.com    
-``` 
-   
+    `git config --global user.name "howhowcan"`      
+    `git config --global user.email gktt58@gmail.com`    
     1.7 Run mininet for testing :`sudo mn`    
     1.8 The error mentioned in the slide occurred, so use the command `sudo service openvswitch-switch start`    
         to solve the problem    
     1.9 Run mininet again and check if miniet is work correctly this time  
-    1.10 Clean up all the connections: `sudo mn -c`     
+    1.10 Clean up all the connections: `sudo mn -c` 
+        
 2. **Example of Mininet**    
     2.1 Change to the directory: `cd ./Network_Topology/src/`       
     2.2 Run the example code:   
@@ -101,7 +105,7 @@ In this lab, we are going to write a Python program which can generate a network
 3. **Topology Generator**
 
     > In this task, all the steps are done in my own computer, not in the container
-
+    
     3.1 Because (my student ID)%3 equals to 0, I check topo0.png     
     3.2 After refering to example.py and some articles online, I finish my work named topology.py    
     3.3 Push topology.py to github
@@ -123,13 +127,10 @@ In this lab, we are going to write a Python program which can generate a network
     4.7 execute the following command to get the result:   
         `mininet> h2 iperf -s -u -i 1 > ./out/result &`    
         `mininet> h6 iperf -c 10.0.0.2 -u –i 1`    
-    4.8 The result is what we want, so use `mininet> exit` to quit from CLI mode
-    4.9 Use the command bellow to push my work on the github:    
+    4.8 The result is what we want, so use `mininet> exit` to quit from CLI mode  
 
 ## References
 
-> TODO: 
-> * Please add your references in the following
 
 * **Mininet**
     * [Mininet Walkthrough](http://mininet.org/walkthrough/)
@@ -159,10 +160,7 @@ In this lab, we are going to write a Python program which can generate a network
 ---
 ## Contributors
 
-> TODO:
-> * Please replace "YOUR_NAME" and "YOUR_GITHUB_LINK" into yours
-
-* [YOUR_NAME](YOUR_GITHUB_LINK)
+* [Jay Tseng](https://github.com/howhowcan)
 * [David Lu](https://github.com/yungshenglu)
 
 ---
