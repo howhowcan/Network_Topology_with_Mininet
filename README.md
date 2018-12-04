@@ -63,7 +63,7 @@ In this lab, we are going to write a Python program which can generate a network
    `h6`: host 6    
    `iperf`: same as above    
    `-c`: let h6 play the role of client in iPerf    
-   `10.0.0.2`     
+   `10.0.0.2`: connect to host 2     
    `-u`: same as above    
    `-i 1`: same as above    
 
@@ -79,10 +79,10 @@ In this lab, we are going to write a Python program which can generate a network
     1.4 Use the command `passwd` to change the password    
     1.5 Clone my repo by `git clone https://github.com/nctucn/lab2-howhowcan.git Network_Topology`    
     1.6 Initiate the git infos by the command      
-        ```
-            git config --global user.name "howhowcan"      
-            git config --global user.email gktt58@gmail.com    
-        ```    
+```
+    git config --global user.name "howhowcan"      
+    git config --global user.email gktt58@gmail.com    
+```    
     1.7 Run mininet for testing :`sudo mn`    
     1.8 The error mentioned in the slide occurred, so use the command `sudo service openvswitch-switch start`    
         to solve the problem    
@@ -123,7 +123,7 @@ In this lab, we are going to write a Python program which can generate a network
         `mininet> h6 iperf -c 10.0.0.2 -u –i 1`    
     4.8 The result is what we want, so use `mininet> exit` to quit from CLI mode
     4.9 Use the command bellow to push my work on the github:    
-    
+
 ## References
 
 > TODO: 
