@@ -16,7 +16,7 @@ In this lab, we are going to write a Python program which can generate a network
 ---
 ## Execution
 
-> To execute my program, you must have an linux enviroment with Mininet installed in your machine.
+> To execute my program, you must have a linux enviroment with Mininet installed in your machine.
 1. Clone my repo by `git clone https://github.com/nctucn/lab2-howhowcan.git Network_Topology`
 2. Start the service of Open vSwitch by `sudo service openvswitch-switch start`
 3. Check the functionality of Mininet: `sudo mn`
@@ -47,9 +47,9 @@ In this lab, we are going to write a Python program which can generate a network
 
 
 
-* `switch1 = self.addSwitch('s1')`: declare a new variable `switch1` and use the member function `addSwitch('')` to add a switch called `s1` to  the topo
-* `host1 = self.addHost('h1')`: declare a new variable `host1` and use the member function `addHost('')` to add a host called `h1` to  the topo
-* `self.addLink(host1,switch1,bw = 10,delay = '50us',loss = 12)`: call the member function `addLink` to build a link between `host1` and `switch1` ,which has a 10Mbits bandwidth, 50us delay 
+* `switch1 = self.addSwitch('s1')`: declare a new variable `switch1` and use the member function `addSwitch()` to add a switch called `s1` to  the topo
+* `host1 = self.addHost('h1')`: declare a new variable `host1` and use the member function `addHost()` to add a host called `h1` to  the topo
+* `self.addLink(host1,switch1,bw = 10,delay = '50us',loss = 12)`: call the member function `addLink()` to build a link between `host1` and `switch1` ,which has a 10Mbits bandwidth, 50us delay 
 * `net = Mininet(
         topo = topo, 
         controller = OVSController,
